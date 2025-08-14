@@ -131,7 +131,7 @@ For this integration, I selected a **Tic-Tac-Toe** game. The original source rep
 
 ## Live Demo
 
-- **Video Demo**: [Link to Video Demo]
+- **Video Demo**: [Recording 2025-08-14 161439.mp4](./Recording%202025-08-14%20161439.mp4)
 - **Live Vercel Link**: [Link to Vercel Deployment]
 
 ## GitHub Repository
