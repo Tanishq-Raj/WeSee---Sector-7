@@ -1,0 +1,237 @@
+/* Wallet Styles */
+.wallet-container {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.wallet-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wallet-header h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.wallet-header .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+/* Wallet Sections */
+.wallet-section {
+  margin-bottom: 2.5rem;
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wallet-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Balance Cards */
+.balance-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.balance-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.balance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.balance-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #6e8efb;
+}
+
+.balance-value {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.action-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+/* Transactions Table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.transactions-table th {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #eee;
+}
+
+.transactions-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.transactions-table tr:last-child td {
+  border-bottom: none;
+}
+
+.transactions-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Status and Amount Styles */
+.status-complete {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.status-pending {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.amount-positive {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.amount-negative {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(110, 142, 251, 0.3);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(110, 142, 251, 0.4);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(110, 142, 251, 0.3);
+}
+
+.button.secondary {
+  background: white;
+  color: #6e8efb;
+  border: 1px solid #6e8efb;
+  box-shadow: 0 4px 10px rgba(110, 142, 251, 0.1);
+}
+
+.button.secondary:hover {
+  background: #f8f9fa;
+  box-shadow: 0 6px 15px rgba(110, 142, 251, 0.2);
+}
+
+.button-small {
+  background: #f0f0f0;
+  color: #555;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button-small:hover {
+  background: #e0e0e0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wallet-header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .wallet-header h1 {
+    font-size: 2rem;
+  }
+  
+  .balance-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .transactions-table th,
+  .transactions-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

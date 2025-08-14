@@ -1,0 +1,343 @@
+/* Buy GT Styles */
+.buygt-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f9fafc;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.buygt-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buygt-header h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.buygt-header .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+/* Buy GT Sections */
+.buygt-section {
+  margin-bottom: 2.5rem;
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buygt-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Exchange Rate */
+.exchange-rate {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.rate-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #6e8efb;
+  position: relative;
+}
+
+.rate-update {
+  color: #666;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Purchase Form */
+.purchase-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6e8efb;
+  box-shadow: 0 0 0 2px rgba(110, 142, 251, 0.2);
+}
+
+.input-note {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Payment Options */
+.payment-options {
+  margin-top: 0.5rem;
+}
+
+.payment-method-cards {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.payment-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.payment-card.selected {
+  border-color: #4a6cf7;
+  box-shadow: 0 4px 12px rgba(74, 108, 247, 0.15);
+}
+
+.payment-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.payment-card-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f4ff;
+  border-radius: 50%;
+  color: #4a6cf7;
+}
+
+.payment-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.payment-card-balance {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.payment-card-balance span {
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-radio {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  accent-color: #4a6cf7;
+}
+
+/* Purchase Summary */
+.purchase-summary-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.summary-title {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.purchase-summary {
+  padding: 0;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.summary-value {
+  font-weight: 500;
+  color: #333;
+}
+
+.summary-divider {
+  height: 1px;
+  background-color: #eaeaea;
+  margin: 15px 0;
+}
+
+.summary-row.total {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.total-value {
+  color: #4a6cf7;
+  font-weight: 700;
+}
+
+/* Purchase Button */
+.purchase-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* History Table */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.history-table th {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #eee;
+}
+
+.history-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Status Styles */
+.status-complete {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.status-pending {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(110, 142, 251, 0.3);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(110, 142, 251, 0.4);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(110, 142, 251, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .buygt-header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .buygt-header h1 {
+    font-size: 2rem;
+  }
+  
+  .exchange-rate {
+    padding: 1.5rem;
+  }
+  
+  .rate-value {
+    font-size: 2rem;
+  }
+  
+  .history-table th,
+  .history-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}

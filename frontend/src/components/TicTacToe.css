@@ -1,0 +1,169 @@
+.tictactoe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 500px;
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.game-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.game-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.game-status {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #6e8efb;
+}
+
+.player-cards {
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.player-card {
+  width: 100px;
+  height: 80px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.player-card p:first-child {
+  margin-bottom: 5px;
+}
+
+.x-win-count, .o-win-count {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.x-win-count {
+  color: #6e8efb;
+}
+
+.o-win-count {
+  color: #a777e3;
+}
+
+.draw-count {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffc107;
+}
+
+.cell-container {
+  width: 300px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cell .cross {
+  color: #6e8efb;
+}
+
+.cell .circle {
+  color: #a777e3;
+}
+
+.cell.win {
+  background-color: rgba(40, 167, 69, 0.2);
+  animation: pulse 1.5s infinite;
+}
+
+.cell.draw {
+  background-color: rgba(255, 193, 7, 0.2);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
+}
+
+.restart-button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(110, 142, 251, 0.3);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.restart-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(110, 142, 251, 0.4);
+}
+
+.restart-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(110, 142, 251, 0.3);
+}

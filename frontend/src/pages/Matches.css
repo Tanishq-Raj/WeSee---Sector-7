@@ -1,0 +1,200 @@
+/* Matches Styles */
+.matches-container {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.matches-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: white;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.matches-header h1 {
+  margin-top: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.matches-header .subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+/* Matches Section */
+.matches-section, .match-history-section {
+  margin-bottom: 2.5rem;
+  background-color: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.matches-section h2, .match-history-section h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Matches Table */
+.matches-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.matches-table th {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #eee;
+}
+
+.matches-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.matches-table tr:last-child td {
+  border-bottom: none;
+}
+
+.matches-table tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Status Styles */
+.status-open {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.status-full {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.result-win {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.result-loss {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Blockchain Toggle */
+.blockchain-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-button {
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.toggle-button.active {
+  background-color: #6e8efb;
+  color: white;
+  border-color: #6e8efb;
+}
+
+.status-completed {
+  color: #6c757d;
+  font-weight: 600;
+}
+
+.result-loss {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.result-draw {
+  color: #ffc107;
+  font-weight: 600;
+}
+
+.result-loss {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+/* Button Styles */
+.button {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(110, 142, 251, 0.3);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(110, 142, 251, 0.4);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(110, 142, 251, 0.3);
+}
+
+.button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .matches-header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .matches-header h1 {
+    font-size: 2rem;
+  }
+  
+  .matches-table th,
+  .matches-table td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
